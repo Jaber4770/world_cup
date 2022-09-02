@@ -41,13 +41,16 @@ body {
 
 .header_info button {
     margin-top: 30px;
-    width: 150px;
     padding: 16px 25px;
     font-size: 20px;
     color: white;
     background-color: red;
-    border-radius: 10px;
+    border-radius: 5px;
     border: red;
+    transition: .5s;
+}
+.header_info button:hover{
+    background-color: black;
 }
 
 .half_width {
