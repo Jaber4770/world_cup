@@ -13,14 +13,16 @@ body {
 /* header start */
 .container {
     width: 1200px;
-    background: #161616;
-    border-radius: 30px;
-
     margin: 3% auto 0 auto;
 
 }
 
-.header_wraper {
+.header {
+    background: #161616;
+    border-radius: 30px;
+}
+
+.content_wraper {
     display: flex;
 }
 
@@ -39,17 +41,20 @@ body {
     margin-top: 20px;
 }
 
-.header_info button {
-    margin-top: 30px;
-    padding: 16px 25px;
+.header_info a {
+    padding: 10px 25px;
     font-size: 20px;
     color: white;
     background-color: red;
     border-radius: 5px;
     border: red;
     transition: .5s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
-.header_info button:hover{
+
+.header_info a:hover {
     background-color: black;
 }
 
@@ -62,4 +67,88 @@ body {
     margin-right: 2%;
     width: 100%;
     vertical-align: middle;
+}
+
+/* main start */
+
+/* side menu */
+.side_menu {
+    width: 20%;
+    background-color: #161616;
+    height: 250px;
+    border-radius: 5px;
+    margin-right: 2%;
+    padding-top: 20px;
+}
+
+.side_menu>div>a {
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 200px;
+    margin: 15px 0 0 10px;
+    border-radius: 5px;
+    border: black;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+#blog_active {
+    background-color: red;
+    border: red;
+    color: white;
+}
+
+
+
+
+.match_list {
+    width: 78%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer start*/
+.footer {
+    background: #161616;
+    color: white;
+}
+
+.footer h1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_list>ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.footer_list>ul>li {
+    list-style-type: none;
+    padding-top: 50px;
+    margin: 0 10px;
+}
+
+.footer_list>ul>li>a {
+    text-decoration: none;
+    color: white;
 }
