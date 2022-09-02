@@ -165,3 +165,148 @@ body {
     text-decoration: none;
     color: white;
 }
+.social i{
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+.social{
+    text-align: center;
+}
+
+/* media query */
+
+/* for phone */
+
+@media only screen and (max-width: 668px) {
+
+    /* header */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main_divided{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        margin-top: 5%;
+    }
+
+    .half_width {
+        width: 90%;
+    }
+
+    .half_width img {
+        margin-top: 20px;
+    }
+
+    .header_info h1 {
+        font-size: 25px;
+    }
+
+    .content_wraper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_info>p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .side_menu {
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+    .side_menu div a {
+        border: 1px solid gray;
+    }
+
+    /* blog list */
+
+    .match_date {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .view_all{
+        display: none;
+    }
+
+
+    /* footer */
+    .footer_list>ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+}
+
+
+/* for tablet */
+@media only screen and (min-width: 669px) and (max-width: 900px) {
+    .container {
+        width: 734px;
+        margin: 3% auto 0 auto;
+    }
+
+    .half_width h1
+    {
+        font-size: 40px;
+    }
+    .half_width a
+    {
+        margin-bottom: 20px;
+    }
+    .half_width img{
+        margin-top: 100px;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .main_divided{
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 50px;
+    }
+
+    .match_date {
+        width: 90%;
+        margin:  0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .match_date>div>img{
+        width: 100%;
+    }
+    .side_menu {
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .side_menu div a{
+        border: 1px solid gray;
+    }
+    .view_all{
+        display: block;
+        margin-top: 50px;
+    }
+    /* footer */
+    .footer {
+        width: 100%;
+    }
+    
+
+}
