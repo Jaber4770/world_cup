@@ -114,6 +114,10 @@ body {
     border: 1px solid rgb(205, 205, 205);
     border-radius: 10px;
 }
+.transfer{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 
 .blog_list img {
     width: 100%;
@@ -138,11 +142,6 @@ body {
     color: rgba(22, 22, 22, 0.7);
 
 }
-
-
-
-
-
 
 
 /* footer start*/
@@ -179,3 +178,71 @@ body {
     text-decoration: none;
     color: white;
 }
+
+
+/* media query */
+
+/* for phone */
+@media only screen and (max-width: 668px) {
+    /* header */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header{
+        margin-top: 5%;
+    }
+    .half_width{
+        width: 90%;
+    }
+    .half_width img{
+        margin-top: 20px;
+    }
+
+    .header_info h1 {
+        font-size: 25px;
+    }
+
+    .content_wraper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_info>p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .side_menu {
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+    }
+    .side_menu div a{
+        border: 1px solid gray;
+    }
+
+/* blog list */
+
+    .blog_list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+
+/* footer */
+    .footer_list>ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding:0 0 50px 0;
+    }
+}
+
+
+/* for tablet */
+@media only screen and (min-width: 669px) and (max-width: 912px) {}
