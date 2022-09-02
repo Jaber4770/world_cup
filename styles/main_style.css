@@ -109,25 +109,30 @@ body {
     grid-gap: 20px;
     margin-bottom: 100px;
 }
-.blog_list img{
+
+.blog_list>div {
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 10px;
+}
+
+.blog_list img {
     width: 100%;
 }
-.blog_info{
-    border: 1px solid rgb(205, 205, 205);
-    border-radius: 0 0 5px 5px;
+
+.blog_info {
     padding-left: 20px;
 }
-.blog_info a{
+
+.blog_info a {
     text-decoration: none;
     font-size: 16px;
-    border: 1px solid gray;
-    padding:  5px 15px;
-    border-radius: 5px;
+    padding: 5px 15px;
     color: #161616;
     margin: 10px 0;
     display: inline-block;
 }
-.blog_info span{
+
+.blog_info span {
     display: inline-block;
     margin: 20px 20px 20px 0;
     color: rgba(22, 22, 22, 0.7);
